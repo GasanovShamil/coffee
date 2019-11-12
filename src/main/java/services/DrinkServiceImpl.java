@@ -16,7 +16,7 @@ public class DrinkServiceImpl implements DrinkServiceI {
     public String makeDrink(DrinkModel drink, Double price) {
         if(PriceChecker.isPriceValid(drink,price)){
             System.out.println(drink.toString());
-            this.report.noteTransaction(drink, price);
+            this.report.noteTransaction(drink);
             return drink.toString();
         } else {
             return this.sendMessage(new MessageModel("Not enough money. Please add : "+ PriceChecker.getMissingPrice(drink, price)));

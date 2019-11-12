@@ -1,6 +1,7 @@
 package models;
 
 import helpers.Drink;
+import helpers.PriceChecker;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -19,9 +20,9 @@ public class ReportModel implements Serializable {
     }};
     private Double totalPice = 0.0;
 
-    public void noteTransaction(DrinkModel drink, Double price) {
+    public void noteTransaction(DrinkModel drink) {
         this.drinkList.put(drink.getDrinkType(), drinkList.get(drink.getDrinkType()) + 1);
-        this.totalPice += price;
+        this.totalPice += PriceChecker.priceList.get(drink.getDrinkType());
     }
 
     public void getReport(){
