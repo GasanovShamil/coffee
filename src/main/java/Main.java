@@ -8,7 +8,7 @@ public class Main {
         DrinkServiceImpl coffeeService = new DrinkServiceImpl();
         DrinkModel drink = new DrinkModel(Drink.TEA,2);
         MessageModel message = new MessageModel("I need more shugar!");
-        coffeeService.makeDrink(drink);
+        coffeeService.makeDrink(drink,0.7);
         coffeeService.sendMessage(message);
 
     }

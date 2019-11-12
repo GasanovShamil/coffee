@@ -18,6 +18,10 @@ public class DrinkModel {
         this.stick = null;
     }
 
+    public Drink getDrinkType() {
+        return this.drink;
+    }
+
     public String getDrink() {
         return this.drink.getCode();
     }
