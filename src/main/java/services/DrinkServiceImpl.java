@@ -3,9 +3,9 @@ package services;
 import models.DrinkModel;
 import models.MessageModel;
 
-public class CoffeeServiceImpl implements CoffeeServiceI {
+public class DrinkServiceImpl implements DrinkServiceI {
 
-    public String makeCoffee(DrinkModel drink) {
+    public String makeDrink(DrinkModel drink) {
         StringBuilder command = new StringBuilder();
         command.append(drink.getDrink()+":");
         command.append(drink.getShugar()+":");

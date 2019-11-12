@@ -1,14 +1,14 @@
 import helpers.Drink;
 import models.DrinkModel;
 import models.MessageModel;
-import services.CoffeeServiceImpl;
+import services.DrinkServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
-        CoffeeServiceImpl coffeeService = new CoffeeServiceImpl();
+        DrinkServiceImpl coffeeService = new DrinkServiceImpl();
         DrinkModel drink = new DrinkModel(Drink.TEA,2);
         MessageModel message = new MessageModel("I need more shugar!");
-        coffeeService.makeCoffee(drink);
+        coffeeService.makeDrink(drink);
         coffeeService.sendMessage(message);
 
     }

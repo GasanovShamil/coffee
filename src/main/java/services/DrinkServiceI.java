@@ -3,9 +3,9 @@ package services;
 import models.DrinkModel;
 import models.MessageModel;
 
-public interface CoffeeServiceI {
+public interface DrinkServiceI {
 
-    String makeCoffee(DrinkModel drink);
+    String makeDrink(DrinkModel drink);
 
     String sendMessage(MessageModel message);
 }
