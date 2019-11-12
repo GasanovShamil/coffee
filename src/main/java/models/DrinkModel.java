@@ -2,14 +2,15 @@ package models;
 import helpers.Drink;
 
 public class DrinkModel {
-    private helpers.Drink drink;
+    private Drink drink;
     private Integer shugar, stick;
+    private boolean extraHot = false;
 
-    public DrinkModel(Drink drink, Integer shugar){
+    public DrinkModel(Drink drink, Integer shugar, boolean extraHot){
         this.drink = drink;
         this.shugar = shugar;
         this.stick = this.shugar != 0? 0:null;
-
+        this.extraHot = extraHot;
     }
 
     public DrinkModel(helpers.Drink drink){
@@ -23,7 +24,8 @@ public class DrinkModel {
     }
 
     public String getDrink() {
-        return this.drink.getCode();
+        String hot = (this.extraHot && this.drink != Drink.ORANGE)?"h":"";
+        return this.drink.getCode()+hot;
     }
 
     public void setDrink(helpers.Drink drink) {

@@ -15,6 +15,7 @@ public class PriceChecker {
         put(Drink.TEA, 0.4);
         put(Drink.COFFEE, 0.6);
         put(Drink.CHOCOLATE, 0.5);
+        put(Drink.ORANGE, 0.6);
     }};
 
 
