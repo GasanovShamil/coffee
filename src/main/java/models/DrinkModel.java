@@ -38,4 +38,13 @@ public class DrinkModel {
     public String getStick(){
         return (this.stick != null)? this.stick.toString():"";
     }
+    public String toString() {
+        StringBuilder command = new StringBuilder();
+        command.append(this.getDrink()+":");
+        command.append(this.getShugar()+":");
+        command.append(this.getStick());
+        return command.toString();
+    }
+
+
 }

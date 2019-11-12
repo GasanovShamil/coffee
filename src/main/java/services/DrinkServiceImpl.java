@@ -6,12 +6,8 @@ import models.MessageModel;
 public class DrinkServiceImpl implements DrinkServiceI {
 
     public String makeDrink(DrinkModel drink) {
-        StringBuilder command = new StringBuilder();
-        command.append(drink.getDrink()+":");
-        command.append(drink.getShugar()+":");
-        command.append(drink.getStick());
-        System.out.println(command);
-        return command.toString();
+        System.out.println(drink.toString());
+        return drink.toString();
     }
 
     @Override
