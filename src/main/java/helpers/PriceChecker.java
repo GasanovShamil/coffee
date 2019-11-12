@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class PriceChecker {
 
-    private static final Map<Drink,Double> priceList = new HashMap<Drink,Double>() {{
+    public static final Map<Drink,Double> priceList = new HashMap<Drink,Double>() {{
         put(Drink.TEA, 0.4);
         put(Drink.COFFEE, 0.6);
         put(Drink.CHOCOLATE, 0.5);
