@@ -1,6 +1,11 @@
 package services;
 
+import models.DrinkModel;
+import models.MessageModel;
+
 public interface CoffeeServiceI {
 
-    public void makeCoffee(Integer drink, Integer sugar);
+    String makeCoffee(DrinkModel drink);
+
+    String sendMessage(MessageModel message);
 }
