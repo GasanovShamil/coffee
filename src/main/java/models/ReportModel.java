@@ -14,7 +14,7 @@ public class ReportModel implements Serializable {
     private Map<Drink,Integer> drinkList = new HashMap<Drink,Integer>() {{
         put(Drink.TEA, 0);
         put(Drink.COFFEE, 0);
-        put(Drink.CHOCOLATE, 1);
+        put(Drink.CHOCOLATE, 0);
         put(Drink.ORANGE, 0);
     }};
     private Double totalPice = 0.0;
